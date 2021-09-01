@@ -1,0 +1,13 @@
+      <article>
+        <ul>
+          <li>
+            Aвтор: {{ post.author }}
+          </li>
+          <li>
+            Дата публикации: {{ post.pub_date|date:"j F Y" }}
+          </li>
+        </ul>      
+        <p>
+          {{ post.text|linebreaksbr }}
+        </p>        
+      </article>
